@@ -28,9 +28,38 @@ dataset_2_filename = {
             {"dblp", "DBLP.hyp"},
             {"aminer","aminer.hyp"},          
             {"drug","NDC-substances.hyp"},
-            {"threads-ask-ubuntu","threads-ask-ubuntu.hyp"},
+            {"ubuntu","threads-ask-ubuntu.hyp"},
             {"rpah","rpa_t130000000.hyp"}
         }
 ```
 
-# waitting for upload main.cpp
+## excute
+```shell
+./main 1 $dataset $algorithm $iteration $log $mu $epsilon
+```
+dataset: enron, congress, contact,dblp,aminer,drug,ubuntu,rpah          
+algorithm: pSCAN-adp+LI, GS*-index+LI, LSBI
+iteration: Iterations to run each algorithm on each dataset
+log: Activate logging to output core-numbers & iteration h-index statistics ?
+mu: parameter mu
+epsilon: parameter epsilon
+
+An example:
+```shell
+./main 1 enron LSBI  1 1 5 0.6
+1
+enron
+../datasets/Enron.hyp
+hypergraph ready!
+enron LSBI 1 1 5 0.6
+LSBI(CI+SI+LI) 
+start!
+compute ok!
+neicun 29870420
+writing to: ../my_cpp12_hash/output_lab1_csv/cluster_optimize_compress_IIII_enron_5_0.600000.csv
+50
+Execution time= 0.002263: init_tm= 5.17134
+insert time  0.009005
+remove time  0.197032
+```
+

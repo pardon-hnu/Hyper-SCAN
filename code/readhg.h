@@ -16,7 +16,7 @@ std::map <std::string,std::string> dataset_to_filename = {
             {"dblp", "../datasets/DBLP.hyp"},
             {"aminer","../datasets/aminer.hyp"},          
             {"drug","../datasets/NDC-substances.hyp"},
-            {"threads-ask-ubuntu","../datasets/threads-ask-ubuntu.hyp"},
+            {"ubuntu","../datasets/threads-ask-ubuntu.hyp"},
             {"rpah","../datasets/rpa_t130000000.hyp"}
         };
 
