@@ -34,7 +34,7 @@ void Algorithm::writecluster(std::string folder,intintvec Cluster,double sim,uns
     // }
     std::string sim1=std::to_string(sim);
     std::string u1=std::to_string(u+1);
-    std::string lujin="../my_cpp12_hash/output_lab1_csv/";//
+    std::string lujin="../output/";//
     std::string file1=lujin+"cluster_"+output["algo"]+"_"+hg.dataset+"_"+u1+"_"+sim1+".csv";
     std::cout<<"writing to: "<<file1<<"\n";
     std::ofstream out(file1.c_str());  //file中的../output/字段使得该文件无法创建
