@@ -12,6 +12,7 @@ Entire datasets can be downloaded at https://drive.google.com/file/d/1Si69amFBcO
 --------datasets: example hypergraphs
 --------SCAN: source code of SCAN for pairwise graph
 --------tools: tools such as getting basic information about hypergraphs, compute the modularity of clustering results, etc.
+--------output: the clustering results
 ```
 
 ## configure
@@ -56,8 +57,7 @@ LSBI(CI+SI+LI)
 start!
 compute ok!
 neicun 29870420
-writing to: ../my_cpp12_hash/output_lab1_csv/cluster_optimize_compress_IIII_enron_5_0.600000.csv
-50
+writing to: ../output/cluster_optimize_compress_IIII_enron_5_0.600000.csv
 Execution time= 0.002263: init_tm= 5.17134
 insert time  0.009005
 remove time  0.197032
