@@ -2,8 +2,17 @@
 This respository is created for the paper: Edge-centered Structural Graph Clustering Over Hypergraph
 
 ## datasets
-enron and southern-women are shared in the datasets file.
+enron and southern-women are shared in the datasets floder.
 Entire datasets can be downloaded at https://drive.google.com/file/d/1Si69amFBcO3kpHxfp0f1M-TLYkY1aySb/view?usp=sharing.
+
+## floder structure
+```
+----Hyper-SCAN
+--------code: source code of pSCAN-adp/GS*-index/LSBI
+--------datasets: example hypergraphs
+--------SCAN: source code of SCAN for pairwise graph
+--------tools: tools such as getting basic information about hypergraphs, compute the modularity of clustering results, etc.
+```
 
 ## configure
 ```shell
