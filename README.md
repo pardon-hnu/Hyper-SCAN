@@ -11,18 +11,17 @@ g++ -std=c++11 -Wall -g -o main main.cpp hypergraph.cpp Utility.cpp HashSet.cpp 
 ```
 
 ## datasets map: name,filename
-readhg.h:
-```C++
-std::map <std::string,std::string> dataset_to_filename = {
-            {"enron" , "../datasets/Enron.hyp"},
-            {"congress" , "../datasets/congress-bills.hyp"},
-            {"contact" , "../datasets/contact-primary-school.hyp"},
-            {"dblp", "../datasets/DBLP.hyp"},
-            {"aminer","../datasets/aminer.hyp"},          
-            {"drug","../datasets/NDC-substances.hyp"},
-            {"threads-ask-ubuntu","../datasets/threads-ask-ubuntu.hyp"},
-            {"rpah","../datasets/rpa_t130000000.hyp"}
-        };
+```python
+dataset_2_filename = {
+            {"enron" , "Enron.hyp"},
+            {"congress" , "congress-bills.hyp"},
+            {"contact" , "contact-primary-school.hyp"},
+            {"dblp", "DBLP.hyp"},
+            {"aminer","aminer.hyp"},          
+            {"drug","NDC-substances.hyp"},
+            {"threads-ask-ubuntu","threads-ask-ubuntu.hyp"},
+            {"rpah","rpa_t130000000.hyp"}
+        }
 ```
 
 # waitting for upload main.cpp
