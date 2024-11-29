@@ -1,0 +1,3971 @@
+main.cpp: In function ‘int main(int, char**)’:
+main.cpp:48:18: warning: variable ‘log’ set but not used [-Wunused-but-set-variable]
+             bool log = false;
+                  ^~~
+Utility.cpp: In member function ‘void Utility::format_graph(std::__cxx11::string, std::__cxx11::string, int, bool)’:
+Utility.cpp:67:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if (es % 10 > percent) continue;
+        ~~~~~~~~^~~~~~~~~
+Utility.cpp: In member function ‘void Utility::merge(int)’:
+Utility.cpp:201:6: warning: unused variable ‘i’ [-Wunused-variable]
+  int i = 0;
+      ^
+Utility.cpp:207:6: warning: unused variable ‘x’ [-Wunused-variable]
+  int x = 0;
+      ^
+Utility.cpp:208:6: warning: unused variable ‘f’ [-Wunused-variable]
+  int f = 0;
+      ^
+HashSet.cpp: In constructor ‘HashSet::HashSet(int)’:
+HashSet.cpp:14:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (unsigned int i = 0; i < buckets_; i++) head_[i] = -1;
+                           ~~^~~~~~~~~~
+HashSet.cpp: In member function ‘int HashSet::find(int)’:
+HashSet.cpp:40:48: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (unsigned int i = head_[target_bucket]; i != -1; i = next_[i]) {
+                                              ~~^~~~~
+HashSet.cpp:41:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (val_[i] == v) return 1;
+       ~~~~~~~~^~~~
+algorithms.cpp: In function ‘bool geometricMean2(double, intIntMap&, const intintvec&, unsigned int, unsigned int, size_t, size_t)’:
+algorithms.cpp:179:18: warning: unused variable ‘count’ [-Wunused-variable]
+     unsigned int count=0;
+                  ^~~~~
+compress_index.cpp: In function ‘void compress_IIII_cluster(double, double, std::__cxx11::string, intintvec, intvec, intIntMap&, compress_index&, double, unsigned int)’:
+compress_index.cpp:718:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if(-x.count<u) break;
+            ~~~~~~~~^~
+compress_index.cpp:760:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if(-x.count<u) break;
+                ~~~~~~~~^~
+compress_index.cpp: In function ‘void compress_IIII_cluster_bianjie(double, double, std::__cxx11::string, intintvec, intvec, intIntMap&, compress_index&, double, unsigned int)’:
+compress_index.cpp:839:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if(-x.count<u) break;
+            ~~~~~~~~^~
+compress_index.cpp: In function ‘void compress_IIII_cluster_hash(double, double, std::__cxx11::string, intintvec, intvec, intIntMap&, compress_index&, double, unsigned int)’:
+compress_index.cpp:1435:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if(-x.count<u) break;
+            ~~~~~~~~^~
+compress_index.cpp:1442:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if(-x.count<u) break;
+            ~~~~~~~~^~
+compress_index.cpp:1450:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if(-x.count<u) break;
+            ~~~~~~~~^~
+compress_index.cpp:1492:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if(-x.count<u) break;
+                ~~~~~~~~^~
+compress_index.cpp: In function ‘void compress_IIII_cluster_bianjie_hash(double, double, std::__cxx11::string, intintvec, intvec, intIntMap&, compress_index&, double, unsigned int)’:
+compress_index.cpp:1566:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if(-x.count<u) break;
+            ~~~~~~~~^~
+compress_index.cpp:1584:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if(-x.count<u) break;
+            ~~~~~~~~^~
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 2 0.2
+optimize_gs_index 
+5734 4423
+0.00954
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_2_0.200000.csv
+2
+Execution time= 0.035332: init_tm= 8.09403:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 2 0.25
+optimize_gs_index 
+5734 4423
+0.009752
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_2_0.250000.csv
+3
+Execution time= 0.029689: init_tm= 8.06067:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 2 0.3
+optimize_gs_index 
+5734 4423
+0.009738
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_2_0.300000.csv
+4
+Execution time= 0.023592: init_tm= 8.0422:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 2 0.35
+optimize_gs_index 
+5734 4423
+0.009773
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_2_0.350000.csv
+7
+Execution time= 0.020049: init_tm= 8.08446:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 2 0.4
+optimize_gs_index 
+5734 4423
+0.009873
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_2_0.400000.csv
+11
+Execution time= 0.016388: init_tm= 8.01321:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 2 0.45
+optimize_gs_index 
+5734 4423
+0.010126
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_2_0.450000.csv
+27
+Execution time= 0.011058: init_tm= 8.11988:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 2 0.5
+optimize_gs_index 
+5734 4423
+0.009796
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_2_0.500000.csv
+37
+Execution time= 0.011061: init_tm= 8.20665:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 2 0.55
+optimize_gs_index 
+5734 4423
+0.009552
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_2_0.550000.csv
+147
+Execution time= 0.004226: init_tm= 8.06512:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 2 0.6
+optimize_gs_index 
+5734 4423
+0.009999
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_2_0.600000.csv
+201
+Execution time= 0.003682: init_tm= 8.0631:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 2 0.65
+optimize_gs_index 
+5734 4423
+0.010064
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_2_0.650000.csv
+233
+Execution time= 0.003408: init_tm= 8.06023:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 2 0.7
+optimize_gs_index 
+5734 4423
+0.010061
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_2_0.700000.csv
+279
+Execution time= 0.002316: init_tm= 8.26603:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 2 0.75
+optimize_gs_index 
+5734 4423
+0.009955
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_2_0.750000.csv
+358
+Execution time= 0.002063: init_tm= 8.23257:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 2 0.8
+optimize_gs_index 
+5734 4423
+0.009936
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_2_0.800000.csv
+360
+Execution time= 0.002647: init_tm= 8.07094:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 5 0.2
+optimize_gs_index 
+5734 4423
+0.009837
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_5_0.200000.csv
+1
+Execution time= 0.032031: init_tm= 8.15174:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 5 0.25
+optimize_gs_index 
+5734 4423
+0.009662
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_5_0.250000.csv
+1
+Execution time= 0.027051: init_tm= 8.21375:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 5 0.3
+optimize_gs_index 
+5734 4423
+0.009875
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_5_0.300000.csv
+2
+Execution time= 0.021203: init_tm= 8.21917:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 5 0.35
+optimize_gs_index 
+5734 4423
+0.009868
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_5_0.350000.csv
+2
+Execution time= 0.017877: init_tm= 8.19122:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 5 0.4
+optimize_gs_index 
+5734 4423
+0.010006
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_5_0.400000.csv
+3
+Execution time= 0.014839: init_tm= 8.1536:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 5 0.45
+optimize_gs_index 
+5734 4423
+0.009898
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_5_0.450000.csv
+7
+Execution time= 0.009581: init_tm= 8.10676:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 5 0.5
+optimize_gs_index 
+5734 4423
+0.009715
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_5_0.500000.csv
+7
+Execution time= 0.009149: init_tm= 8.19207:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 5 0.55
+optimize_gs_index 
+5734 4423
+0.009923
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_5_0.550000.csv
+36
+Execution time= 0.002936: init_tm= 8.13236:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 5 0.6
+optimize_gs_index 
+5734 4423
+0.009314
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_5_0.600000.csv
+50
+Execution time= 0.002537: init_tm= 8.13778:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 5 0.65
+optimize_gs_index 
+5734 4423
+0.009732
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_5_0.650000.csv
+53
+Execution time= 0.002233: init_tm= 8.1318:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 5 0.7
+optimize_gs_index 
+5734 4423
+0.009813
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_5_0.700000.csv
+77
+Execution time= 0.001783: init_tm= 8.07807:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 5 0.75
+optimize_gs_index 
+5734 4423
+0.009286
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_5_0.750000.csv
+93
+Execution time= 0.001365: init_tm= 8.06333:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 5 0.8
+optimize_gs_index 
+5734 4423
+0.009759
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_5_0.800000.csv
+103
+Execution time= 0.001118: init_tm= 8.18769:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 10 0.2
+optimize_gs_index 
+5734 4423
+0.009908
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_10_0.200000.csv
+1
+Execution time= 0.031998: init_tm= 8.22155:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 10 0.25
+optimize_gs_index 
+5734 4423
+0.009821
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_10_0.250000.csv
+1
+Execution time= 0.026837: init_tm= 8.19921:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 10 0.3
+optimize_gs_index 
+5734 4423
+0.010015
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_10_0.300000.csv
+1
+Execution time= 0.020971: init_tm= 8.1568:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 10 0.35
+optimize_gs_index 
+5734 4423
+0.009145
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_10_0.350000.csv
+1
+Execution time= 0.017764: init_tm= 8.12046:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 10 0.4
+optimize_gs_index 
+5734 4423
+0.009713
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_10_0.400000.csv
+1
+Execution time= 0.014688: init_tm= 8.14356:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 10 0.45
+optimize_gs_index 
+5734 4423
+0.009858
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_10_0.450000.csv
+3
+Execution time= 0.00923: init_tm= 8.12138:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 10 0.5
+optimize_gs_index 
+5734 4423
+0.00974
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_10_0.500000.csv
+6
+Execution time= 0.008956: init_tm= 8.1173:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 10 0.55
+optimize_gs_index 
+5734 4423
+0.009958
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_10_0.550000.csv
+18
+Execution time= 0.00258: init_tm= 8.23389:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 10 0.6
+optimize_gs_index 
+5734 4423
+0.010166
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_10_0.600000.csv
+23
+Execution time= 0.00199: init_tm= 8.16843:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 10 0.65
+optimize_gs_index 
+5734 4423
+0.010073
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_10_0.650000.csv
+26
+Execution time= 0.001676: init_tm= 8.25788:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 10 0.7
+optimize_gs_index 
+5734 4423
+0.009804
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_10_0.700000.csv
+29
+Execution time= 0.001133: init_tm= 8.16859:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 10 0.75
+optimize_gs_index 
+5734 4423
+0.009816
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_10_0.750000.csv
+17
+Execution time= 0.000864: init_tm= 8.19236:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 10 0.8
+optimize_gs_index 
+5734 4423
+0.009637
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_10_0.800000.csv
+17
+Execution time= 0.000744: init_tm= 8.16905:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 15 0.2
+optimize_gs_index 
+5734 4423
+0.010017
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_15_0.200000.csv
+1
+Execution time= 0.031815: init_tm= 8.17636:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 15 0.25
+optimize_gs_index 
+5734 4423
+0.009924
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_15_0.250000.csv
+1
+Execution time= 0.026681: init_tm= 8.14308:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 15 0.3
+optimize_gs_index 
+5734 4423
+0.009627
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_15_0.300000.csv
+2
+Execution time= 0.021151: init_tm= 8.05014:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 15 0.35
+optimize_gs_index 
+5734 4423
+0.009843
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_15_0.350000.csv
+2
+Execution time= 0.017383: init_tm= 8.17182:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 15 0.4
+optimize_gs_index 
+5734 4423
+0.009791
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_15_0.400000.csv
+1
+Execution time= 0.014231: init_tm= 8.20462:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 15 0.45
+optimize_gs_index 
+5734 4423
+0.009676
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_15_0.450000.csv
+1
+Execution time= 0.008995: init_tm= 8.2262:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 15 0.5
+optimize_gs_index 
+5734 4423
+0.009817
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_15_0.500000.csv
+1
+Execution time= 0.008528: init_tm= 8.16297:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 15 0.55
+optimize_gs_index 
+5734 4423
+0.009681
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_15_0.550000.csv
+16
+Execution time= 0.002314: init_tm= 8.19918:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 15 0.6
+optimize_gs_index 
+5734 4423
+0.009843
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_15_0.600000.csv
+13
+Execution time= 0.00165: init_tm= 8.23181:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 15 0.65
+optimize_gs_index 
+5734 4423
+0.010073
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_15_0.650000.csv
+13
+Execution time= 0.001374: init_tm= 8.20268:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 15 0.7
+optimize_gs_index 
+5734 4423
+0.009905
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_15_0.700000.csv
+14
+Execution time= 0.000978: init_tm= 8.2066:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 15 0.75
+optimize_gs_index 
+5734 4423
+0.009977
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_15_0.750000.csv
+8
+Execution time= 0.000781: init_tm= 8.18433:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 15 0.8
+optimize_gs_index 
+5734 4423
+0.009394
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392
+writing to: ../scan_hypergraph/output/cluster_optimize_gs_index_enron_15_0.800000.csv
+10
+Execution time= 0.000644: init_tm= 8.17292:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 2 0.2
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_2_0.200000.csv
+2
+Execution time= 0.03606: init_tm= 5.45352
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 2 0.25
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_2_0.250000.csv
+3
+Execution time= 0.423617: init_tm= 5.40174
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 2 0.3
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_2_0.300000.csv
+4
+Execution time= 0.023947: init_tm= 5.43763
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 2 0.35
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_2_0.350000.csv
+7
+Execution time= 0.229692: init_tm= 5.42901
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 2 0.4
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_2_0.400000.csv
+11
+Execution time= 0.016267: init_tm= 5.4351
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 2 0.45
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_2_0.450000.csv
+27
+Execution time= 0.078105: init_tm= 5.41966
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 2 0.5
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_2_0.500000.csv
+37
+Execution time= 0.009853: init_tm= 5.41367
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 2 0.55
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_2_0.550000.csv
+147
+Execution time= 0.04701: init_tm= 5.35039
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 2 0.6
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_2_0.600000.csv
+201
+Execution time= 0.002853: init_tm= 5.32462
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 2 0.65
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_2_0.650000.csv
+233
+Execution time= 0.025028: init_tm= 5.32498
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 2 0.7
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_2_0.700000.csv
+279
+Execution time= 0.002332: init_tm= 5.36454
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 2 0.75
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_2_0.750000.csv
+358
+Execution time= 0.013428: init_tm= 5.37433
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 2 0.8
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_2_0.800000.csv
+360
+Execution time= 0.001882: init_tm= 5.35093
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 5 0.2
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_5_0.200000.csv
+1
+Execution time= 0.035319: init_tm= 5.28437
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 5 0.25
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_5_0.250000.csv
+1
+Execution time= 0.414285: init_tm= 5.34043
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 5 0.3
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_5_0.300000.csv
+2
+Execution time= 0.023499: init_tm= 5.3912
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 5 0.35
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_5_0.350000.csv
+2
+Execution time= 0.230529: init_tm= 5.35307
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 5 0.4
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_5_0.400000.csv
+3
+Execution time= 0.015658: init_tm= 5.33082
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 5 0.45
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_5_0.450000.csv
+7
+Execution time= 0.076921: init_tm= 5.35519
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 5 0.5
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_5_0.500000.csv
+7
+Execution time= 0.009262: init_tm= 5.34907
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 5 0.55
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_5_0.550000.csv
+36
+Execution time= 0.04108: init_tm= 5.36747
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 5 0.6
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_5_0.600000.csv
+50
+Execution time= 0.002339: init_tm= 5.5096
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 5 0.65
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_5_0.650000.csv
+53
+Execution time= 0.027249: init_tm= 5.41559
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 5 0.7
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_5_0.700000.csv
+77
+Execution time= 0.001547: init_tm= 5.37133
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 5 0.75
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_5_0.750000.csv
+93
+Execution time= 0.011854: init_tm= 5.45115
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 5 0.8
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_5_0.800000.csv
+103
+Execution time= 0.001255: init_tm= 5.404
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 10 0.2
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_10_0.200000.csv
+1
+Execution time= 0.034899: init_tm= 5.30354
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 10 0.25
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_10_0.250000.csv
+1
+Execution time= 0.424387: init_tm= 5.38443
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 10 0.3
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_10_0.300000.csv
+1
+Execution time= 0.023473: init_tm= 5.33031
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 10 0.35
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_10_0.350000.csv
+1
+Execution time= 0.236315: init_tm= 5.44226
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 10 0.4
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_10_0.400000.csv
+1
+Execution time= 0.015538: init_tm= 5.41751
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 10 0.45
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_10_0.450000.csv
+3
+Execution time= 0.075647: init_tm= 5.39361
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 10 0.5
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_10_0.500000.csv
+6
+Execution time= 0.009053: init_tm= 5.44553
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 10 0.55
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_10_0.550000.csv
+18
+Execution time= 0.045042: init_tm= 5.37727
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 10 0.6
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_10_0.600000.csv
+23
+Execution time= 0.001985: init_tm= 5.43639
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 10 0.65
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_10_0.650000.csv
+26
+Execution time= 0.026456: init_tm= 5.37932
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 10 0.7
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_10_0.700000.csv
+29
+Execution time= 0.001053: init_tm= 5.31282
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 10 0.75
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_10_0.750000.csv
+17
+Execution time= 0.009363: init_tm= 5.41458
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 10 0.8
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_10_0.800000.csv
+17
+Execution time= 0.000699: init_tm= 5.48001
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 15 0.2
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_15_0.200000.csv
+1
+Execution time= 0.035663: init_tm= 5.4391
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 15 0.25
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_15_0.250000.csv
+1
+Execution time= 0.361578: init_tm= 5.36409
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 15 0.3
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_15_0.300000.csv
+2
+Execution time= 0.023066: init_tm= 5.30065
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 15 0.35
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_15_0.350000.csv
+2
+Execution time= 0.234342: init_tm= 5.36725
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 15 0.4
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_15_0.400000.csv
+1
+Execution time= 0.015931: init_tm= 5.423
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 15 0.45
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_15_0.450000.csv
+1
+Execution time= 0.077368: init_tm= 5.36892
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 15 0.5
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_15_0.500000.csv
+1
+Execution time= 0.009038: init_tm= 5.42555
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 15 0.55
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_15_0.550000.csv
+16
+Execution time= 0.045931: init_tm= 5.40929
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 15 0.6
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_15_0.600000.csv
+13
+Execution time= 0.001459: init_tm= 5.46667
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 15 0.65
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_15_0.650000.csv
+13
+Execution time= 0.024969: init_tm= 5.46036
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 15 0.7
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_15_0.700000.csv
+14
+Execution time= 0.00099: init_tm= 5.32463
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 15 0.75
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_15_0.750000.csv
+8
+Execution time= 0.007521: init_tm= 5.34386
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 15 0.8
+optimize_compress_IIII 
+5734 4423
+start!
+compute ok!
+neicun 29870420
+writing to: ../scan_hypergraph/output/cluster_optimize_compress_IIII_enron_15_0.800000.csv
+10
+Execution time= 0.000657: init_tm= 5.2741
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 2 0.2
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_2_0.200000.csv
+2
+Execution time= 6.95772: init_tm= 0.008127
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 2 0.25
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_2_0.250000.csv
+3
+Execution time= 7.06531: init_tm= 0.008155
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 2 0.3
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_2_0.300000.csv
+4
+Execution time= 7.1893: init_tm= 0.008333
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 2 0.35
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_2_0.350000.csv
+7
+Execution time= 7.20831: init_tm= 0.008204
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 2 0.4
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_2_0.400000.csv
+11
+Execution time= 7.09516: init_tm= 0.008339
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 2 0.45
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_2_0.450000.csv
+27
+Execution time= 6.91456: init_tm= 0.008245
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 2 0.5
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_2_0.500000.csv
+37
+Execution time= 6.79779: init_tm= 0.008308
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 2 0.55
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_2_0.550000.csv
+147
+Execution time= 6.74022: init_tm= 0.008499
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 2 0.6
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_2_0.600000.csv
+201
+Execution time= 6.50093: init_tm= 0.008553
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 2 0.65
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_2_0.650000.csv
+233
+Execution time= 6.20651: init_tm= 0.008189
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 2 0.7
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_2_0.700000.csv
+279
+Execution time= 6.14742: init_tm= 0.008344
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 2 0.75
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_2_0.750000.csv
+358
+Execution time= 5.74307: init_tm= 0.008438
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 2 0.8
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_2_0.800000.csv
+360
+Execution time= 5.42816: init_tm= 0.008477
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 5 0.2
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_5_0.200000.csv
+1
+Execution time= 6.9834: init_tm= 0.008392
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 5 0.25
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_5_0.250000.csv
+1
+Execution time= 7.29267: init_tm= 0.008404
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 5 0.3
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_5_0.300000.csv
+2
+Execution time= 7.54943: init_tm= 0.008183
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 5 0.35
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_5_0.350000.csv
+2
+Execution time= 7.48863: init_tm= 0.008211
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 5 0.4
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_5_0.400000.csv
+3
+Execution time= 7.51394: init_tm= 0.008286
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 5 0.45
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_5_0.450000.csv
+7
+Execution time= 7.62998: init_tm= 0.008066
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 5 0.5
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_5_0.500000.csv
+7
+Execution time= 7.64066: init_tm= 0.008477
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 5 0.55
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_5_0.550000.csv
+36
+Execution time= 7.73572: init_tm= 0.008695
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 5 0.6
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_5_0.600000.csv
+50
+Execution time= 7.55595: init_tm= 0.008298
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 5 0.65
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_5_0.650000.csv
+53
+Execution time= 7.34559: init_tm= 0.008183
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 5 0.7
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_5_0.700000.csv
+77
+Execution time= 7.44812: init_tm= 0.008302
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 5 0.75
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_5_0.750000.csv
+93
+Execution time= 6.60804: init_tm= 0.008210
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 5 0.8
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_5_0.800000.csv
+103
+Execution time= 6.25626: init_tm= 0.008031
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 10 0.2
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_10_0.200000.csv
+1
+Execution time= 7.1718: init_tm= 0.008038
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 10 0.25
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_10_0.250000.csv
+1
+Execution time= 7.52624: init_tm= 0.008362
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 10 0.3
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_10_0.300000.csv
+1
+Execution time= 7.56161: init_tm= 0.008170
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 10 0.35
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_10_0.350000.csv
+1
+Execution time= 7.82465: init_tm= 0.007814
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 10 0.4
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_10_0.400000.csv
+1
+Execution time= 7.96972: init_tm= 0.007960
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 10 0.45
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_10_0.450000.csv
+3
+Execution time= 8.1626: init_tm= 0.007987
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 10 0.5
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_10_0.500000.csv
+6
+Execution time= 8.18404: init_tm= 0.007901
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 10 0.55
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_10_0.550000.csv
+18
+Execution time= 8.27679: init_tm= 0.008503
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 10 0.6
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_10_0.600000.csv
+23
+Execution time= 8.05131: init_tm= 0.008374
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 10 0.65
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_10_0.650000.csv
+26
+Execution time= 7.61181: init_tm= 0.008116
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 10 0.7
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_10_0.700000.csv
+29
+Execution time= 7.19028: init_tm= 0.008034
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 10 0.75
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_10_0.750000.csv
+17
+Execution time= 6.1384: init_tm= 0.008152
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 10 0.8
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_10_0.800000.csv
+17
+Execution time= 5.67824: init_tm= 0.008083
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 15 0.2
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_15_0.200000.csv
+1
+Execution time= 7.29333: init_tm= 0.008302
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 15 0.25
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_15_0.250000.csv
+1
+Execution time= 7.66996: init_tm= 0.008185
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 15 0.3
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_15_0.300000.csv
+2
+Execution time= 8.0414: init_tm= 0.008147
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 15 0.35
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_15_0.350000.csv
+2
+Execution time= 8.42571: init_tm= 0.008119
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 15 0.4
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_15_0.400000.csv
+1
+Execution time= 8.38352: init_tm= 0.008141
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 15 0.45
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_15_0.450000.csv
+1
+Execution time= 8.66214: init_tm= 0.008193
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 15 0.5
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_15_0.500000.csv
+1
+Execution time= 8.88227: init_tm= 0.008065
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 15 0.55
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_15_0.550000.csv
+16
+Execution time= 8.66874: init_tm= 0.008656
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 15 0.6
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_15_0.600000.csv
+13
+Execution time= 8.13103: init_tm= 0.008090
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 15 0.65
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_15_0.650000.csv
+13
+Execution time= 7.51624: init_tm= 0.008087
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 15 0.7
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_15_0.700000.csv
+14
+Execution time= 7.06327: init_tm= 0.008009
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 15 0.75
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_15_0.750000.csv
+8
+Execution time= 6.15815: init_tm= 0.008224
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 15 0.8
+optimize_index 
+5734 4423
+writing to: ../scan_hypergraph/output/cluster_optimize_index_enron_15_0.800000.csv
+10
+Execution time= 5.53233: init_tm= 0.008146
+------------
+main.cpp: In function ‘int main(int, char**)’:
+main.cpp:48:18: warning: variable ‘log’ set but not used [-Wunused-but-set-variable]
+             bool log = false;
+                  ^~~
+Utility.cpp: In member function ‘void Utility::format_graph(std::__cxx11::string, std::__cxx11::string, int, bool)’:
+Utility.cpp:67:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if (es % 10 > percent) continue;
+        ~~~~~~~~^~~~~~~~~
+Utility.cpp: In member function ‘void Utility::merge(int)’:
+Utility.cpp:201:6: warning: unused variable ‘i’ [-Wunused-variable]
+  int i = 0;
+      ^
+Utility.cpp:207:6: warning: unused variable ‘x’ [-Wunused-variable]
+  int x = 0;
+      ^
+Utility.cpp:208:6: warning: unused variable ‘f’ [-Wunused-variable]
+  int f = 0;
+      ^
+HashSet.cpp: In constructor ‘HashSet::HashSet(int)’:
+HashSet.cpp:14:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (unsigned int i = 0; i < buckets_; i++) head_[i] = -1;
+                           ~~^~~~~~~~~~
+HashSet.cpp: In member function ‘int HashSet::find(int)’:
+HashSet.cpp:40:48: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (unsigned int i = head_[target_bucket]; i != -1; i = next_[i]) {
+                                              ~~^~~~~
+HashSet.cpp:41:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (val_[i] == v) return 1;
+       ~~~~~~~~^~~~
+algorithms.cpp: In function ‘bool geometricMean2(double, intIntMap&, const intintvec&, unsigned int, unsigned int, size_t, size_t)’:
+algorithms.cpp:179:18: warning: unused variable ‘count’ [-Wunused-variable]
+     unsigned int count=0;
+                  ^~~~~
+compress_index.cpp: In function ‘void compress_IIII_construct(double, double, std::__cxx11::string, intintvec, intvec, intIntMap&, compress_index&, double, unsigned int)’:
+compress_index.cpp:337:46: error: ‘comp3’ was not declared in this scope
+         sort(Neighbor.begin(),Neighbor.end(),comp3);
+                                              ^~~~~
+compress_index.cpp:337:46: note: suggested alternative: ‘cp3’
+         sort(Neighbor.begin(),Neighbor.end(),comp3);
+                                              ^~~~~
+                                              cp3
+compress_index.cpp:377:62: error: ‘comp2’ was not declared in this scope
+         sort(Cluster_Index[k].begin(),Cluster_Index[k].end(),comp2);
+                                                              ^~~~~
+compress_index.cpp: In function ‘void compress_IIII_cluster(double, double, std::__cxx11::string, intintvec, intvec, intIntMap&, compress_index&, double, unsigned int)’:
+compress_index.cpp:430:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if(-x.count<u) break;
+            ~~~~~~~~^~
+compress_index.cpp:469:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if(-x.count<u) break;
+                ~~~~~~~~^~
+compress_index.cpp: In function ‘void compress_IIII_cluster_bianjie(double, double, std::__cxx11::string, intintvec, intvec, intIntMap&, compress_index&, double, unsigned int)’:
+compress_index.cpp:542:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if(-x.count<u) break;
+            ~~~~~~~~^~
+compress_index.cpp: In function ‘void updata_insert(compress_index&, size_t, size_t)’:
+compress_index.cpp:804:46: error: ‘comp3’ was not declared in this scope
+         sort(Neighbor.begin(),Neighbor.end(),comp3);
+                                              ^~~~~
+compress_index.cpp:804:46: note: suggested alternative: ‘cp3’
+         sort(Neighbor.begin(),Neighbor.end(),comp3);
+                                              ^~~~~
+                                              cp3
+compress_index.cpp:850:66: error: ‘comp2’ was not declared in this scope
+         sort(a.Cluster_Index[k].begin(),a.Cluster_Index[k].end(),comp2);
+                                                                  ^~~~~
+compress_index.cpp: In function ‘void updata_remove(compress_index&, size_t, size_t)’:
+compress_index.cpp:1031:46: error: ‘comp3’ was not declared in this scope
+         sort(Neighbor.begin(),Neighbor.end(),comp3);
+                                              ^~~~~
+compress_index.cpp:1031:46: note: suggested alternative: ‘cp3’
+         sort(Neighbor.begin(),Neighbor.end(),comp3);
+                                              ^~~~~
+                                              cp3
+compress_index.cpp:1077:66: error: ‘comp2’ was not declared in this scope
+         sort(a.Cluster_Index[k].begin(),a.Cluster_Index[k].end(),comp2);
+                                                                  ^~~~~
+run.sh: 行 23: ./main：无法执行二进制文件: 可执行文件格式错误
+------------
+run.sh: 行 23: ./main：无法执行二进制文件: 可执行文件格式错误
+------------
+run.sh: 行 23: ./main：无法执行二进制文件: 可执行文件格式错误
+------------
+run.sh: 行 23: ./main：无法执行二进制文件: 可执行文件格式错误
+------------
+run.sh: 行 23: ./main：无法执行二进制文件: 可执行文件格式错误
+------------
+run.sh: 行 23: ./main：无法执行二进制文件: 可执行文件格式错误
+------------
+run.sh: 行 23: ./main：无法执行二进制文件: 可执行文件格式错误
+------------
+run.sh: 行 23: ./main：无法执行二进制文件: 可执行文件格式错误
+------------
+run.sh: 行 23: ./main：无法执行二进制文件: 可执行文件格式错误
+------------
+run.sh: 行 23: ./main：无法执行二进制文件: 可执行文件格式错误
+------------
+run.sh: 行 23: ./main：无法执行二进制文件: 可执行文件格式错误
+------------
+run.sh: 行 23: ./main：无法执行二进制文件: 可执行文件格式错误
+------------
+main.cpp: In function ‘int main(int, char**)’:
+main.cpp:48:18: warning: variable ‘log’ set but not used [-Wunused-but-set-variable]
+             bool log = false;
+                  ^~~
+Utility.cpp: In member function ‘void Utility::format_graph(std::__cxx11::string, std::__cxx11::string, int, bool)’:
+Utility.cpp:67:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if (es % 10 > percent) continue;
+        ~~~~~~~~^~~~~~~~~
+Utility.cpp: In member function ‘void Utility::merge(int)’:
+Utility.cpp:201:6: warning: unused variable ‘i’ [-Wunused-variable]
+  int i = 0;
+      ^
+Utility.cpp:207:6: warning: unused variable ‘x’ [-Wunused-variable]
+  int x = 0;
+      ^
+Utility.cpp:208:6: warning: unused variable ‘f’ [-Wunused-variable]
+  int f = 0;
+      ^
+HashSet.cpp: In constructor ‘HashSet::HashSet(int)’:
+HashSet.cpp:14:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (unsigned int i = 0; i < buckets_; i++) head_[i] = -1;
+                           ~~^~~~~~~~~~
+HashSet.cpp: In member function ‘int HashSet::find(int)’:
+HashSet.cpp:40:48: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (unsigned int i = head_[target_bucket]; i != -1; i = next_[i]) {
+                                              ~~^~~~~
+HashSet.cpp:41:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (val_[i] == v) return 1;
+       ~~~~~~~~^~~~
+algorithms.cpp: In function ‘bool geometricMean2(double, intIntMap&, const intintvec&, unsigned int, unsigned int, size_t, size_t)’:
+algorithms.cpp:179:18: warning: unused variable ‘count’ [-Wunused-variable]
+     unsigned int count=0;
+                  ^~~~~
+compress_index.cpp: In function ‘void compress_IIII_cluster(double, double, std::__cxx11::string, intintvec, intvec, intIntMap&, compress_index&, double, unsigned int)’:
+compress_index.cpp:439:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if(-x.count<u) break;
+            ~~~~~~~~^~
+compress_index.cpp:478:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if(-x.count<u) break;
+                ~~~~~~~~^~
+compress_index.cpp: In function ‘void compress_IIII_cluster_bianjie(double, double, std::__cxx11::string, intintvec, intvec, intIntMap&, compress_index&, double, unsigned int)’:
+compress_index.cpp:551:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if(-x.count<u) break;
+            ~~~~~~~~^~
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 2 0.2
+optimize_gs_index 
+0.009516
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392(Bytes)
+writing to: ./output/cluster_optimize_gs_index_enron_2_0.200000.csv
+2
+Execution time= 0.034921: init_tm= 8.64093:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 2 0.25
+optimize_gs_index 
+0.009745
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392(Bytes)
+writing to: ./output/cluster_optimize_gs_index_enron_2_0.250000.csv
+3
+Execution time= 0.02748: init_tm= 8.5556:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 5 0.2
+optimize_gs_index 
+0.009091
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392(Bytes)
+writing to: ./output/cluster_optimize_gs_index_enron_5_0.200000.csv
+1
+Execution time= 0.032838: init_tm= 8.52039:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 5 0.25
+optimize_gs_index 
+0.009308
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392(Bytes)
+writing to: ./output/cluster_optimize_gs_index_enron_5_0.250000.csv
+1
+Execution time= 0.028299: init_tm= 8.40187:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 2 0.2
+optimize_compress_IIII 
+start!
+compute ok!
+neicun 29870420(Bytes)
+writing to: ./output1/cluster_optimize_compress_IIII_enron_2_0.200000.csv
+2
+Execution time= 0.037082: init_tm= 5.40113
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 2 0.25
+optimize_compress_IIII 
+start!
+compute ok!
+neicun 29870420(Bytes)
+writing to: ./output1/cluster_optimize_compress_IIII_enron_2_0.250000.csv
+3
+Execution time= 0.427871: init_tm= 5.429
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 5 0.2
+optimize_compress_IIII 
+start!
+compute ok!
+neicun 29870420(Bytes)
+writing to: ./output1/cluster_optimize_compress_IIII_enron_5_0.200000.csv
+1
+Execution time= 0.037031: init_tm= 5.37645
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 5 0.25
+optimize_compress_IIII 
+start!
+compute ok!
+neicun 29870420(Bytes)
+writing to: ./output1/cluster_optimize_compress_IIII_enron_5_0.250000.csv
+1
+Execution time= 0.427292: init_tm= 5.40429
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 2 0.2
+optimize_index 
+writing to: ./output/cluster_optimize_index_enron_2_0.200000.csv
+2
+Execution time= 7.01462: init_tm= 0.008522
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 2 0.25
+optimize_index 
+writing to: ./output/cluster_optimize_index_enron_2_0.250000.csv
+3
+Execution time= 7.18404: init_tm= 0.008317
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 5 0.2
+optimize_index 
+writing to: ./output/cluster_optimize_index_enron_5_0.200000.csv
+1
+Execution time= 7.1923: init_tm= 0.008430
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 5 0.25
+optimize_index 
+writing to: ./output/cluster_optimize_index_enron_5_0.250000.csv
+1
+Execution time= 7.41979: init_tm= 0.008253
+------------
+main.cpp: In function ‘int main(int, char**)’:
+main.cpp:48:18: warning: variable ‘log’ set but not used [-Wunused-but-set-variable]
+             bool log = false;
+                  ^~~
+Utility.cpp: In member function ‘void Utility::format_graph(std::__cxx11::string, std::__cxx11::string, int, bool)’:
+Utility.cpp:67:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if (es % 10 > percent) continue;
+        ~~~~~~~~^~~~~~~~~
+Utility.cpp: In member function ‘void Utility::merge(int)’:
+Utility.cpp:201:6: warning: unused variable ‘i’ [-Wunused-variable]
+  int i = 0;
+      ^
+Utility.cpp:207:6: warning: unused variable ‘x’ [-Wunused-variable]
+  int x = 0;
+      ^
+Utility.cpp:208:6: warning: unused variable ‘f’ [-Wunused-variable]
+  int f = 0;
+      ^
+HashSet.cpp: In constructor ‘HashSet::HashSet(int)’:
+HashSet.cpp:14:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (unsigned int i = 0; i < buckets_; i++) head_[i] = -1;
+                           ~~^~~~~~~~~~
+HashSet.cpp: In member function ‘int HashSet::find(int)’:
+HashSet.cpp:40:48: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (unsigned int i = head_[target_bucket]; i != -1; i = next_[i]) {
+                                              ~~^~~~~
+HashSet.cpp:41:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (val_[i] == v) return 1;
+       ~~~~~~~~^~~~
+algorithms.cpp: In function ‘bool geometricMean2(double, intIntMap&, const intintvec&, unsigned int, unsigned int, size_t, size_t)’:
+algorithms.cpp:179:18: warning: unused variable ‘count’ [-Wunused-variable]
+     unsigned int count=0;
+                  ^~~~~
+compress_index.cpp: In function ‘void compress_IIII_cluster(double, double, std::__cxx11::string, intintvec, intvec, intIntMap&, compress_index&, double, unsigned int)’:
+compress_index.cpp:439:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if(-x.count<u) break;
+            ~~~~~~~~^~
+compress_index.cpp:478:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if(-x.count<u) break;
+                ~~~~~~~~^~
+compress_index.cpp: In function ‘void compress_IIII_cluster_bianjie(double, double, std::__cxx11::string, intintvec, intvec, intIntMap&, compress_index&, double, unsigned int)’:
+compress_index.cpp:551:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if(-x.count<u) break;
+            ~~~~~~~~^~
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 2 0.2
+optimize_gs_index 
+0.0098
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392(Bytes)
+writing to: ./output1/cluster_optimize_gs_index_enron_2_0.200000.csv
+2
+Execution time= 0.03381: init_tm= 8.65666:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 2 0.25
+optimize_gs_index 
+0.009223
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392(Bytes)
+writing to: ./output1/cluster_optimize_gs_index_enron_2_0.250000.csv
+3
+Execution time= 0.028472: init_tm= 8.58998:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 5 0.2
+optimize_gs_index 
+0.009602
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392(Bytes)
+writing to: ./output1/cluster_optimize_gs_index_enron_5_0.200000.csv
+1
+Execution time= 0.03391: init_tm= 8.71846:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 5 0.25
+optimize_gs_index 
+0.009338
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392(Bytes)
+writing to: ./output1/cluster_optimize_gs_index_enron_5_0.250000.csv
+1
+Execution time= 0.027942: init_tm= 8.63398:  insert time=0
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 2 0.2
+optimize_compress_IIII 
+start!
+compute ok!
+neicun 29870420(Bytes)
+writing to: ./output1/cluster_optimize_compress_IIII_enron_2_0.200000.csv
+2
+Execution time= 0.038574: init_tm= 5.40047
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 2 0.25
+optimize_compress_IIII 
+start!
+compute ok!
+neicun 29870420(Bytes)
+writing to: ./output1/cluster_optimize_compress_IIII_enron_2_0.250000.csv
+3
+Execution time= 0.433642: init_tm= 5.42201
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 5 0.2
+optimize_compress_IIII 
+start!
+compute ok!
+neicun 29870420(Bytes)
+writing to: ./output1/cluster_optimize_compress_IIII_enron_5_0.200000.csv
+1
+Execution time= 0.036364: init_tm= 5.36695
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 5 0.25
+optimize_compress_IIII 
+start!
+compute ok!
+neicun 29870420(Bytes)
+writing to: ./output1/cluster_optimize_compress_IIII_enron_5_0.250000.csv
+1
+Execution time= 0.426086: init_tm= 5.38701
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 2 0.2
+optimize_index 
+writing to: ./output1/cluster_optimize_index_enron_2_0.200000.csv
+2
+Execution time= 6.96632: init_tm= 0.008279
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 2 0.25
+optimize_index 
+writing to: ./output1/cluster_optimize_index_enron_2_0.250000.csv
+3
+Execution time= 7.09912: init_tm= 0.008209
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 5 0.2
+optimize_index 
+writing to: ./output1/cluster_optimize_index_enron_5_0.200000.csv
+1
+Execution time= 6.78392: init_tm= 0.007752
+------------
+1
+enron
+../scan_hypergraph/data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 5 0.25
+optimize_index 
+writing to: ./output1/cluster_optimize_index_enron_5_0.250000.csv
+1
+Execution time= 7.19691: init_tm= 0.007900
+------------
+main.cpp: In function ‘int main(int, char**)’:
+main.cpp:48:18: warning: variable ‘log’ set but not used [-Wunused-but-set-variable]
+             bool log = false;
+                  ^~~
+Utility.cpp: In member function ‘void Utility::format_graph(std::__cxx11::string, std::__cxx11::string, int, bool)’:
+Utility.cpp:67:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if (es % 10 > percent) continue;
+        ~~~~~~~~^~~~~~~~~
+Utility.cpp: In member function ‘void Utility::merge(int)’:
+Utility.cpp:201:6: warning: unused variable ‘i’ [-Wunused-variable]
+  int i = 0;
+      ^
+Utility.cpp:207:6: warning: unused variable ‘x’ [-Wunused-variable]
+  int x = 0;
+      ^
+Utility.cpp:208:6: warning: unused variable ‘f’ [-Wunused-variable]
+  int f = 0;
+      ^
+HashSet.cpp: In constructor ‘HashSet::HashSet(int)’:
+HashSet.cpp:14:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (unsigned int i = 0; i < buckets_; i++) head_[i] = -1;
+                           ~~^~~~~~~~~~
+HashSet.cpp: In member function ‘int HashSet::find(int)’:
+HashSet.cpp:40:48: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (unsigned int i = head_[target_bucket]; i != -1; i = next_[i]) {
+                                              ~~^~~~~
+HashSet.cpp:41:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (val_[i] == v) return 1;
+       ~~~~~~~~^~~~
+algorithms.cpp: In function ‘bool geometricMean2(double, intIntMap&, const intintvec&, unsigned int, unsigned int, size_t, size_t)’:
+algorithms.cpp:179:18: warning: unused variable ‘count’ [-Wunused-variable]
+     unsigned int count=0;
+                  ^~~~~
+compress_index.cpp: In function ‘void compress_IIII_cluster(double, double, std::__cxx11::string, intintvec, intvec, intIntMap&, compress_index&, double, unsigned int)’:
+compress_index.cpp:439:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if(-x.count<u) break;
+            ~~~~~~~~^~
+compress_index.cpp:478:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if(-x.count<u) break;
+                ~~~~~~~~^~
+compress_index.cpp: In function ‘void compress_IIII_cluster_bianjie(double, double, std::__cxx11::string, intintvec, intvec, intIntMap&, compress_index&, double, unsigned int)’:
+compress_index.cpp:551:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if(-x.count<u) break;
+            ~~~~~~~~^~
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 2 0.2
+optimize_gs_index 
+0.009554
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392(Bytes)
+writing to: ./output1/cluster_optimize_gs_index_enron_2_0.200000.csv
+2
+Execution time= 0.03406: init_tm= 8.48109:  insert time=0
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 2 0.25
+optimize_gs_index 
+0.009206
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392(Bytes)
+writing to: ./output1/cluster_optimize_gs_index_enron_2_0.250000.csv
+3
+Execution time= 0.02779: init_tm= 8.55245:  insert time=0
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 5 0.2
+optimize_gs_index 
+0.009368
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392(Bytes)
+writing to: ./output1/cluster_optimize_gs_index_enron_5_0.200000.csv
+1
+Execution time= 0.032651: init_tm= 8.58197:  insert time=0
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 5 0.25
+optimize_gs_index 
+0.009245
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392(Bytes)
+writing to: ./output1/cluster_optimize_gs_index_enron_5_0.250000.csv
+1
+Execution time= 0.028644: init_tm= 8.57487:  insert time=0
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 2 0.2
+optimize_compress_IIII 
+start!
+compute ok!
+neicun 29870420(Bytes)
+writing to: ./output1/cluster_optimize_compress_IIII_enron_2_0.200000.csv
+2
+Execution time= 0.037821: init_tm= 5.4582
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 2 0.25
+optimize_compress_IIII 
+start!
+compute ok!
+neicun 29870420(Bytes)
+writing to: ./output1/cluster_optimize_compress_IIII_enron_2_0.250000.csv
+3
+Execution time= 0.425215: init_tm= 5.39054
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 5 0.2
+optimize_compress_IIII 
+start!
+compute ok!
+neicun 29870420(Bytes)
+writing to: ./output1/cluster_optimize_compress_IIII_enron_5_0.200000.csv
+1
+Execution time= 0.036912: init_tm= 5.39476
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 5 0.25
+optimize_compress_IIII 
+start!
+compute ok!
+neicun 29870420(Bytes)
+writing to: ./output1/cluster_optimize_compress_IIII_enron_5_0.250000.csv
+1
+Execution time= 0.42628: init_tm= 5.36763
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 2 0.2
+optimize_index 
+writing to: ./output1/cluster_optimize_index_enron_2_0.200000.csv
+2
+Execution time= 6.9775: init_tm= 0.008277
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 2 0.25
+optimize_index 
+writing to: ./output1/cluster_optimize_index_enron_2_0.250000.csv
+3
+Execution time= 7.11241: init_tm= 0.008035
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 5 0.2
+optimize_index 
+writing to: ./output1/cluster_optimize_index_enron_5_0.200000.csv
+1
+Execution time= 7.03797: init_tm= 0.008080
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 5 0.25
+optimize_index 
+writing to: ./output1/cluster_optimize_index_enron_5_0.250000.csv
+1
+Execution time= 7.33744: init_tm= 0.008558
+------------
+main.cpp: In function ‘int main(int, char**)’:
+main.cpp:48:18: warning: variable ‘log’ set but not used [-Wunused-but-set-variable]
+             bool log = false;
+                  ^~~
+Utility.cpp: In member function ‘void Utility::format_graph(std::__cxx11::string, std::__cxx11::string, int, bool)’:
+Utility.cpp:67:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if (es % 10 > percent) continue;
+        ~~~~~~~~^~~~~~~~~
+Utility.cpp: In member function ‘void Utility::merge(int)’:
+Utility.cpp:201:6: warning: unused variable ‘i’ [-Wunused-variable]
+  int i = 0;
+      ^
+Utility.cpp:207:6: warning: unused variable ‘x’ [-Wunused-variable]
+  int x = 0;
+      ^
+Utility.cpp:208:6: warning: unused variable ‘f’ [-Wunused-variable]
+  int f = 0;
+      ^
+HashSet.cpp: In constructor ‘HashSet::HashSet(int)’:
+HashSet.cpp:14:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (unsigned int i = 0; i < buckets_; i++) head_[i] = -1;
+                           ~~^~~~~~~~~~
+HashSet.cpp: In member function ‘int HashSet::find(int)’:
+HashSet.cpp:40:48: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (unsigned int i = head_[target_bucket]; i != -1; i = next_[i]) {
+                                              ~~^~~~~
+HashSet.cpp:41:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (val_[i] == v) return 1;
+       ~~~~~~~~^~~~
+algorithms.cpp: In function ‘bool geometricMean2(double, intIntMap&, const intintvec&, unsigned int, unsigned int, size_t, size_t)’:
+algorithms.cpp:179:18: warning: unused variable ‘count’ [-Wunused-variable]
+     unsigned int count=0;
+                  ^~~~~
+compress_index.cpp: In function ‘void compress_IIII_cluster(double, double, std::__cxx11::string, intintvec, intvec, intIntMap&, compress_index&, double, unsigned int)’:
+compress_index.cpp:439:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if(-x.count<u) break;
+            ~~~~~~~~^~
+compress_index.cpp:478:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if(-x.count<u) break;
+                ~~~~~~~~^~
+compress_index.cpp: In function ‘void compress_IIII_cluster_bianjie(double, double, std::__cxx11::string, intintvec, intvec, intIntMap&, compress_index&, double, unsigned int)’:
+compress_index.cpp:551:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if(-x.count<u) break;
+            ~~~~~~~~^~
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 2 0.2
+optimize_gs_index 
+0.009157
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392(Bytes)
+writing to: ./output1/cluster_optimize_gs_index_enron_2_0.200000.csv
+2
+Execution time= 0.03318: init_tm= 8.54816:  insert time=0
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 2 0.25
+optimize_gs_index 
+0.009415
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392(Bytes)
+writing to: ./output1/cluster_optimize_gs_index_enron_2_0.250000.csv
+3
+Execution time= 0.028094: init_tm= 8.61514:  insert time=0
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 5 0.2
+optimize_gs_index 
+0.009306
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392(Bytes)
+writing to: ./output1/cluster_optimize_gs_index_enron_5_0.200000.csv
+1
+Execution time= 0.034368: init_tm= 8.58091:  insert time=0
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 5 0.25
+optimize_gs_index 
+0.009699
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392(Bytes)
+writing to: ./output1/cluster_optimize_gs_index_enron_5_0.250000.csv
+1
+Execution time= 0.028588: init_tm= 8.74981:  insert time=0
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 2 0.2
+optimize_compress_IIII 
+start!
+compute ok!
+neicun 29870420(Bytes)
+writing to: ./output1/cluster_optimize_compress_IIII_enron_2_0.200000.csv
+2
+Execution time= 0.038124: init_tm= 5.36432
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 2 0.25
+optimize_compress_IIII 
+start!
+compute ok!
+neicun 29870420(Bytes)
+writing to: ./output1/cluster_optimize_compress_IIII_enron_2_0.250000.csv
+3
+Execution time= 0.421901: init_tm= 5.34839
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 5 0.2
+optimize_compress_IIII 
+start!
+compute ok!
+neicun 29870420(Bytes)
+writing to: ./output1/cluster_optimize_compress_IIII_enron_5_0.200000.csv
+1
+Execution time= 0.037323: init_tm= 5.34879
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 5 0.25
+optimize_compress_IIII 
+start!
+compute ok!
+neicun 29870420(Bytes)
+writing to: ./output1/cluster_optimize_compress_IIII_enron_5_0.250000.csv
+1
+Execution time= 0.430914: init_tm= 5.43724
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 2 0.2
+optimize_index 
+writing to: ./output1/cluster_optimize_index_enron_2_0.200000.csv
+2
+Execution time= 6.92858: init_tm= 0.008302
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 2 0.25
+optimize_index 
+writing to: ./output1/cluster_optimize_index_enron_2_0.250000.csv
+3
+Execution time= 7.17415: init_tm= 0.008181
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 5 0.2
+optimize_index 
+writing to: ./output1/cluster_optimize_index_enron_5_0.200000.csv
+1
+Execution time= 7.06372: init_tm= 0.008201
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 5 0.25
+optimize_index 
+writing to: ./output1/cluster_optimize_index_enron_5_0.250000.csv
+1
+Execution time= 7.21197: init_tm= 0.008171
+------------
+main.cpp: In function ‘int main(int, char**)’:
+main.cpp:48:18: warning: variable ‘log’ set but not used [-Wunused-but-set-variable]
+             bool log = false;
+                  ^~~
+Utility.cpp: In member function ‘void Utility::format_graph(std::__cxx11::string, std::__cxx11::string, int, bool)’:
+Utility.cpp:67:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if (es % 10 > percent) continue;
+        ~~~~~~~~^~~~~~~~~
+Utility.cpp: In member function ‘void Utility::merge(int)’:
+Utility.cpp:201:6: warning: unused variable ‘i’ [-Wunused-variable]
+  int i = 0;
+      ^
+Utility.cpp:207:6: warning: unused variable ‘x’ [-Wunused-variable]
+  int x = 0;
+      ^
+Utility.cpp:208:6: warning: unused variable ‘f’ [-Wunused-variable]
+  int f = 0;
+      ^
+HashSet.cpp: In constructor ‘HashSet::HashSet(int)’:
+HashSet.cpp:14:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (unsigned int i = 0; i < buckets_; i++) head_[i] = -1;
+                           ~~^~~~~~~~~~
+HashSet.cpp: In member function ‘int HashSet::find(int)’:
+HashSet.cpp:40:48: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (unsigned int i = head_[target_bucket]; i != -1; i = next_[i]) {
+                                              ~~^~~~~
+HashSet.cpp:41:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (val_[i] == v) return 1;
+       ~~~~~~~~^~~~
+algorithms.cpp: In function ‘bool geometricMean2(double, intIntMap&, const intintvec&, unsigned int, unsigned int, size_t, size_t)’:
+algorithms.cpp:179:18: warning: unused variable ‘count’ [-Wunused-variable]
+     unsigned int count=0;
+                  ^~~~~
+compress_index.cpp: In function ‘void compress_IIII_cluster(double, double, std::__cxx11::string, intintvec, intvec, intIntMap&, compress_index&, double, unsigned int)’:
+compress_index.cpp:439:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if(-x.count<u) break;
+            ~~~~~~~~^~
+compress_index.cpp:478:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if(-x.count<u) break;
+                ~~~~~~~~^~
+compress_index.cpp: In function ‘void compress_IIII_cluster_bianjie(double, double, std::__cxx11::string, intintvec, intvec, intIntMap&, compress_index&, double, unsigned int)’:
+compress_index.cpp:551:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if(-x.count<u) break;
+            ~~~~~~~~^~
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 2 0.2
+optimize_gs_index 
+0.009821
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392(Bytes)
+writing to: ./output1/cluster_optimize_gs_index_enron_2_0.200000.csv
+cluster numbers: 2
+Execution time= 0.036038: init_tm= 8.79129:  insert time=0
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 2 0.25
+optimize_gs_index 
+0.009467
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392(Bytes)
+writing to: ./output1/cluster_optimize_gs_index_enron_2_0.250000.csv
+cluster numbers: 3
+Execution time= 0.029241: init_tm= 8.65643:  insert time=0
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 5 0.2
+optimize_gs_index 
+0.009397
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392(Bytes)
+writing to: ./output1/cluster_optimize_gs_index_enron_5_0.200000.csv
+cluster numbers: 1
+Execution time= 0.034217: init_tm= 8.54783:  insert time=0
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 5 0.25
+optimize_gs_index 
+0.009047
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392(Bytes)
+writing to: ./output1/cluster_optimize_gs_index_enron_5_0.250000.csv
+cluster numbers: 1
+Execution time= 0.027814: init_tm= 8.3353:  insert time=0
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 2 0.2
+optimize_compress_IIII 
+start!
+compute ok!
+neicun 29870420(Bytes)
+writing to: ./output1/cluster_optimize_compress_IIII_enron_2_0.200000.csv
+cluster numbers: 2
+Execution time= 0.03448: init_tm= 5.03264
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 2 0.25
+optimize_compress_IIII 
+start!
+compute ok!
+neicun 29870420(Bytes)
+writing to: ./output1/cluster_optimize_compress_IIII_enron_2_0.250000.csv
+cluster numbers: 3
+Execution time= 0.423317: init_tm= 5.18122
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 5 0.2
+optimize_compress_IIII 
+start!
+compute ok!
+neicun 29870420(Bytes)
+writing to: ./output1/cluster_optimize_compress_IIII_enron_5_0.200000.csv
+cluster numbers: 1
+Execution time= 0.034376: init_tm= 5.29237
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 5 0.25
+optimize_compress_IIII 
+start!
+compute ok!
+neicun 29870420(Bytes)
+writing to: ./output1/cluster_optimize_compress_IIII_enron_5_0.250000.csv
+cluster numbers: 1
+Execution time= 0.429681: init_tm= 5.32895
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 2 0.2
+optimize_index 
+writing to: ./output1/cluster_optimize_index_enron_2_0.200000.csv
+cluster numbers: 2
+Execution time= 6.95668: init_tm= 0.008107
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 2 0.25
+optimize_index 
+writing to: ./output1/cluster_optimize_index_enron_2_0.250000.csv
+cluster numbers: 3
+Execution time= 7.18989: init_tm= 0.008252
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 5 0.2
+optimize_index 
+writing to: ./output1/cluster_optimize_index_enron_5_0.200000.csv
+cluster numbers: 1
+Execution time= 6.98803: init_tm= 0.007946
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 5 0.25
+optimize_index 
+writing to: ./output1/cluster_optimize_index_enron_5_0.250000.csv
+cluster numbers: 1
+Execution time= 7.39469: init_tm= 0.008313
+------------
+main.cpp: In function ‘int main(int, char**)’:
+main.cpp:48:18: warning: variable ‘log’ set but not used [-Wunused-but-set-variable]
+             bool log = false;
+                  ^~~
+Utility.cpp: In member function ‘void Utility::format_graph(std::__cxx11::string, std::__cxx11::string, int, bool)’:
+Utility.cpp:67:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if (es % 10 > percent) continue;
+        ~~~~~~~~^~~~~~~~~
+Utility.cpp: In member function ‘void Utility::merge(int)’:
+Utility.cpp:201:6: warning: unused variable ‘i’ [-Wunused-variable]
+  int i = 0;
+      ^
+Utility.cpp:207:6: warning: unused variable ‘x’ [-Wunused-variable]
+  int x = 0;
+      ^
+Utility.cpp:208:6: warning: unused variable ‘f’ [-Wunused-variable]
+  int f = 0;
+      ^
+HashSet.cpp: In constructor ‘HashSet::HashSet(int)’:
+HashSet.cpp:14:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (unsigned int i = 0; i < buckets_; i++) head_[i] = -1;
+                           ~~^~~~~~~~~~
+HashSet.cpp: In member function ‘int HashSet::find(int)’:
+HashSet.cpp:40:48: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (unsigned int i = head_[target_bucket]; i != -1; i = next_[i]) {
+                                              ~~^~~~~
+HashSet.cpp:41:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (val_[i] == v) return 1;
+       ~~~~~~~~^~~~
+algorithms.cpp: In function ‘bool geometricMean2(double, intIntMap&, const intintvec&, unsigned int, unsigned int, size_t, size_t)’:
+algorithms.cpp:179:18: warning: unused variable ‘count’ [-Wunused-variable]
+     unsigned int count=0;
+                  ^~~~~
+compress_index.cpp: In function ‘void compress_IIII_cluster(double, double, std::__cxx11::string, intintvec, intvec, intIntMap&, compress_index&, double, unsigned int)’:
+compress_index.cpp:439:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if(-x.count<u) break;
+            ~~~~~~~~^~
+compress_index.cpp:478:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if(-x.count<u) break;
+                ~~~~~~~~^~
+compress_index.cpp: In function ‘void compress_IIII_cluster_bianjie(double, double, std::__cxx11::string, intintvec, intvec, intIntMap&, compress_index&, double, unsigned int)’:
+compress_index.cpp:551:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if(-x.count<u) break;
+            ~~~~~~~~^~
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 2 0.2
+optimize_gs_index 
+0.009194
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392(Bytes)
+writing to: ./output1/cluster_optimize_gs_index_enron_2_0.200000.csv
+cluster numbers: 2
+Execution time= 0.03414: init_tm= 8.49337:  insert time=0
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 2 0.25
+optimize_gs_index 
+0.009284
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392(Bytes)
+writing to: ./output1/cluster_optimize_gs_index_enron_2_0.250000.csv
+cluster numbers: 3
+Execution time= 0.028012: init_tm= 8.40925:  insert time=0
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 2 0.3
+optimize_gs_index 
+0.009051
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392(Bytes)
+writing to: ./output1/cluster_optimize_gs_index_enron_2_0.300000.csv
+cluster numbers: 4
+Execution time= 0.022376: init_tm= 8.54367:  insert time=0
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 2 0.35
+optimize_gs_index 
+0.009322
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392(Bytes)
+writing to: ./output1/cluster_optimize_gs_index_enron_2_0.350000.csv
+cluster numbers: 7
+Execution time= 0.017933: init_tm= 8.49488:  insert time=0
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 2 0.4
+optimize_gs_index 
+0.008974
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392(Bytes)
+writing to: ./output1/cluster_optimize_gs_index_enron_2_0.400000.csv
+cluster numbers: 11
+Execution time= 0.015087: init_tm= 8.38007:  insert time=0
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 2 0.45
+optimize_gs_index 
+0.009286
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392(Bytes)
+writing to: ./output1/cluster_optimize_gs_index_enron_2_0.450000.csv
+cluster numbers: 27
+Execution time= 0.009248: init_tm= 8.45661:  insert time=0
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 2 0.5
+optimize_gs_index 
+0.008903
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392(Bytes)
+writing to: ./output1/cluster_optimize_gs_index_enron_2_0.500000.csv
+cluster numbers: 37
+Execution time= 0.009089: init_tm= 8.45561:  insert time=0
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 2 0.55
+optimize_gs_index 
+0.009107
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392(Bytes)
+writing to: ./output1/cluster_optimize_gs_index_enron_2_0.550000.csv
+cluster numbers: 147
+Execution time= 0.003174: init_tm= 8.63984:  insert time=0
+main.cpp: In function ‘int main(int, char**)’:
+main.cpp:48:18: warning: variable ‘log’ set but not used [-Wunused-but-set-variable]
+             bool log = false;
+                  ^~~
+Utility.cpp: In member function ‘void Utility::format_graph(std::__cxx11::string, std::__cxx11::string, int, bool)’:
+Utility.cpp:67:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if (es % 10 > percent) continue;
+        ~~~~~~~~^~~~~~~~~
+Utility.cpp: In member function ‘void Utility::merge(int)’:
+Utility.cpp:201:6: warning: unused variable ‘i’ [-Wunused-variable]
+  int i = 0;
+      ^
+Utility.cpp:207:6: warning: unused variable ‘x’ [-Wunused-variable]
+  int x = 0;
+      ^
+Utility.cpp:208:6: warning: unused variable ‘f’ [-Wunused-variable]
+  int f = 0;
+      ^
+HashSet.cpp: In constructor ‘HashSet::HashSet(int)’:
+HashSet.cpp:14:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (unsigned int i = 0; i < buckets_; i++) head_[i] = -1;
+                           ~~^~~~~~~~~~
+HashSet.cpp: In member function ‘int HashSet::find(int)’:
+HashSet.cpp:40:48: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (unsigned int i = head_[target_bucket]; i != -1; i = next_[i]) {
+                                              ~~^~~~~
+HashSet.cpp:41:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (val_[i] == v) return 1;
+       ~~~~~~~~^~~~
+algorithms.cpp: In function ‘bool geometricMean2(double, intIntMap&, const intintvec&, unsigned int, unsigned int, size_t, size_t)’:
+algorithms.cpp:179:18: warning: unused variable ‘count’ [-Wunused-variable]
+     unsigned int count=0;
+                  ^~~~~
+compress_index.cpp: In function ‘void compress_IIII_cluster(double, double, std::__cxx11::string, intintvec, intvec, intIntMap&, compress_index&, double, unsigned int)’:
+compress_index.cpp:439:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if(-x.count<u) break;
+            ~~~~~~~~^~
+compress_index.cpp:478:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if(-x.count<u) break;
+                ~~~~~~~~^~
+compress_index.cpp: In function ‘void compress_IIII_cluster_bianjie(double, double, std::__cxx11::string, intintvec, intvec, intIntMap&, compress_index&, double, unsigned int)’:
+compress_index.cpp:551:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if(-x.count<u) break;
+            ~~~~~~~~^~
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 2 0.2
+optimize_gs_index 
+0.008724
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392(Bytes)
+writing to: ./output1/cluster_optimize_gs_index_enron_2_0.200000.csv
+cluster numbers: 2
+Execution time= 0.034236: init_tm= 8.44937:  insert time=0
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 2 0.25
+optimize_gs_index 
+0.008945
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392(Bytes)
+writing to: ./output1/cluster_optimize_gs_index_enron_2_0.250000.csv
+cluster numbers: 3
+Execution time= 0.028234: init_tm= 8.28324:  insert time=0
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 5 0.2
+optimize_gs_index 
+0.009094
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392(Bytes)
+writing to: ./output1/cluster_optimize_gs_index_enron_5_0.200000.csv
+cluster numbers: 1
+Execution time= 0.033742: init_tm= 8.23945:  insert time=0
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_gs_index 1 0 5 0.25
+optimize_gs_index 
+0.00874
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  116395392(Bytes)
+writing to: ./output1/cluster_optimize_gs_index_enron_5_0.250000.csv
+cluster numbers: 1
+Execution time= 0.028774: init_tm= 8.35109:  insert time=0
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 2 0.2
+optimize_compress_IIII(CI+SI+LI) 
+start!
+compute ok!
+neicun 29870420(Bytes)
+writing to: ./output1/cluster_optimize_compress_IIII_enron_2_0.200000.csv
+cluster numbers: 2
+Execution time= 0.040183: init_tm= 5.25065
+updata_insert_time  0.008869
+updata_remove_time  0.017558
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 2 0.25
+optimize_compress_IIII(CI+SI+LI) 
+start!
+compute ok!
+neicun 29870420(Bytes)
+writing to: ./output1/cluster_optimize_compress_IIII_enron_2_0.250000.csv
+cluster numbers: 3
+Execution time= 0.421967: init_tm= 5.30863
+updata_insert_time  0.00905
+updata_remove_time  0.032835
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 5 0.2
+optimize_compress_IIII(CI+SI+LI) 
+start!
+compute ok!
+neicun 29870420(Bytes)
+writing to: ./output1/cluster_optimize_compress_IIII_enron_5_0.200000.csv
+cluster numbers: 1
+Execution time= 0.038418: init_tm= 5.30928
+updata_insert_time  0.183051
+updata_remove_time  0.139496
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_compress_IIII 1 0 5 0.25
+optimize_compress_IIII(CI+SI+LI) 
+start!
+compute ok!
+neicun 29870420(Bytes)
+writing to: ./output1/cluster_optimize_compress_IIII_enron_5_0.250000.csv
+cluster numbers: 1
+Execution time= 0.422962: init_tm= 5.22319
+updata_insert_time  0.009006
+updata_remove_time  0.084733
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 2 0.2
+optimize_index(baseline+LI) 
+writing to: ./output1/cluster_optimize_index_enron_2_0.200000.csv
+cluster numbers: 2
+Execution time= 6.89877: init_tm= 0.007527
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 2 0.25
+optimize_index(baseline+LI) 
+writing to: ./output1/cluster_optimize_index_enron_2_0.250000.csv
+cluster numbers: 3
+Execution time= 6.84954: init_tm= 0.007437
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 5 0.2
+optimize_index(baseline+LI) 
+writing to: ./output1/cluster_optimize_index_enron_5_0.200000.csv
+cluster numbers: 1
+Execution time= 6.89432: init_tm= 0.007799
+------------
+1
+enron
+./data/datasets/real/Enron.hyp
+hypergraph ready!
+enron optimize_index 1 0 5 0.25
+optimize_index(baseline+LI) 
+writing to: ./output1/cluster_optimize_index_enron_5_0.250000.csv
+cluster numbers: 1
+Execution time= 7.06715: init_tm= 0.007440
+------------
+1
+contact
+./data/datasets/real/contact-primary-school.hyp
+hypergraph ready!
+contact optimize_gs_index 1 0 2 0.2
+optimize_gs_index 
+0.006311
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  143242688(Bytes)
+writing to: ./output1/cluster_optimize_gs_index_contact_2_0.200000.csv
+cluster numbers: 1
+Execution time= 0.060792: init_tm= 6.66254:  insert time=0
+------------
+run.sh: 行 23: ./main: 没有那个文件或目录
+------------
+run.sh: 行 23: ./main: 没有那个文件或目录
+------------
+run.sh: 行 23: ./main: 没有那个文件或目录
+------------
+run.sh: 行 23: ./main: 没有那个文件或目录
+------------
+run.sh: 行 23: ./main: 没有那个文件或目录
+------------
+run.sh: 行 23: ./main: 没有那个文件或目录
+------------
+run.sh: 行 23: ./main: 没有那个文件或目录
+------------
+run.sh: 行 23: ./main: 没有那个文件或目录
+------------
+run.sh: 行 23: ./main: 没有那个文件或目录
+------------
+run.sh: 行 23: ./main: 没有那个文件或目录
+------------
+run.sh: 行 23: ./main: 没有那个文件或目录
+------------
+main.cpp: In function ‘int main(int, char**)’:
+main.cpp:48:18: warning: variable ‘log’ set but not used [-Wunused-but-set-variable]
+             bool log = false;
+                  ^~~
+Utility.cpp: In member function ‘void Utility::format_graph(std::__cxx11::string, std::__cxx11::string, int, bool)’:
+Utility.cpp:67:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if (es % 10 > percent) continue;
+        ~~~~~~~~^~~~~~~~~
+Utility.cpp: In member function ‘void Utility::merge(int)’:
+Utility.cpp:201:6: warning: unused variable ‘i’ [-Wunused-variable]
+  int i = 0;
+      ^
+Utility.cpp:207:6: warning: unused variable ‘x’ [-Wunused-variable]
+  int x = 0;
+      ^
+Utility.cpp:208:6: warning: unused variable ‘f’ [-Wunused-variable]
+  int f = 0;
+      ^
+HashSet.cpp: In constructor ‘HashSet::HashSet(int)’:
+HashSet.cpp:14:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (unsigned int i = 0; i < buckets_; i++) head_[i] = -1;
+                           ~~^~~~~~~~~~
+HashSet.cpp: In member function ‘int HashSet::find(int)’:
+HashSet.cpp:40:48: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (unsigned int i = head_[target_bucket]; i != -1; i = next_[i]) {
+                                              ~~^~~~~
+HashSet.cpp:41:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (val_[i] == v) return 1;
+       ~~~~~~~~^~~~
+algorithms.cpp: In function ‘bool geometricMean2(double, intIntMap&, const intintvec&, unsigned int, unsigned int, size_t, size_t)’:
+algorithms.cpp:179:18: warning: unused variable ‘count’ [-Wunused-variable]
+     unsigned int count=0;
+                  ^~~~~
+compress_index.cpp: In function ‘void compress_IIII_cluster(double, double, std::__cxx11::string, intintvec, intvec, intIntMap&, compress_index&, double, unsigned int)’:
+compress_index.cpp:439:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if(-x.count<u) break;
+            ~~~~~~~~^~
+compress_index.cpp:478:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if(-x.count<u) break;
+                ~~~~~~~~^~
+compress_index.cpp: In function ‘void compress_IIII_cluster_bianjie(double, double, std::__cxx11::string, intintvec, intvec, intIntMap&, compress_index&, double, unsigned int)’:
+compress_index.cpp:551:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if(-x.count<u) break;
+            ~~~~~~~~^~
+1
+contact
+./data/datasets/real/contact-primary-school.hyp
+hypergraph ready!
+contact optimize_gs_index 1 0 2 0.2
+optimize_gs_index 
+0.006273
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  143242688(Bytes)
+writing to: ./output1/cluster_optimize_gs_index_contact_2_0.200000.csv
+cluster numbers: 1
+Execution time= 0.062673: init_tm= 7.00254:  insert time=0
+------------
+1
+contact
+./data/datasets/real/contact-primary-school.hyp
+hypergraph ready!
+contact optimize_gs_index 1 0 2 0.25
+optimize_gs_index 
+0.006452
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  143242688(Bytes)
+writing to: ./output1/cluster_optimize_gs_index_contact_2_0.250000.csv
+cluster numbers: 1
+Execution time= 0.065444: init_tm= 7.15996:  insert time=0
+------------
+1
+contact
+./data/datasets/real/contact-primary-school.hyp
+hypergraph ready!
+contact optimize_gs_index 1 0 5 0.2
+optimize_gs_index 
+0.006404
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  143242688(Bytes)
+writing to: ./output1/cluster_optimize_gs_index_contact_5_0.200000.csv
+cluster numbers: 1
+Execution time= 0.063197: init_tm= 7.13398:  insert time=0
+------------
+1
+contact
+./data/datasets/real/contact-primary-school.hyp
+hypergraph ready!
+contact optimize_gs_index 1 0 5 0.25
+optimize_gs_index 
+0.006349
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  143242688(Bytes)
+writing to: ./output1/cluster_optimize_gs_index_contact_5_0.250000.csv
+cluster numbers: 1
+Execution time= 0.064485: init_tm= 7.18112:  insert time=0
+------------
+1
+contact
+./data/datasets/real/contact-primary-school.hyp
+hypergraph ready!
+contact optimize_compress_IIII 1 0 2 0.2
+optimize_compress_IIII(CI+SI+LI) 
+start!
+compute ok!
+neicun 37291232(Bytes)
+writing to: ./output1/cluster_optimize_compress_IIII_contact_2_0.200000.csv
+cluster numbers: 1
+Execution time= 0.075607: init_tm= 5.04956
+updata_insert_time  0.099238
+updata_remove_time  0.068533
+------------
+1
+contact
+./data/datasets/real/contact-primary-school.hyp
+hypergraph ready!
+contact optimize_compress_IIII 1 0 2 0.25
+optimize_compress_IIII(CI+SI+LI) 
+start!
+compute ok!
+neicun 37291232(Bytes)
+writing to: ./output1/cluster_optimize_compress_IIII_contact_2_0.250000.csv
+cluster numbers: 1
+Execution time= 0.239636: init_tm= 5.20402
+updata_insert_time  0.032994
+updata_remove_time  0.082496
+------------
+1
+contact
+./data/datasets/real/contact-primary-school.hyp
+hypergraph ready!
+contact optimize_compress_IIII 1 0 5 0.2
+optimize_compress_IIII(CI+SI+LI) 
+start!
+compute ok!
+neicun 37291232(Bytes)
+writing to: ./output1/cluster_optimize_compress_IIII_contact_5_0.200000.csv
+cluster numbers: 1
+Execution time= 0.078776: init_tm= 5.04435
+updata_insert_time  0.031861
+updata_remove_time  0.055425
+------------
+1
+contact
+./data/datasets/real/contact-primary-school.hyp
+hypergraph ready!
+contact optimize_compress_IIII 1 0 5 0.25
+optimize_compress_IIII(CI+SI+LI) 
+start!
+compute ok!
+neicun 37291232(Bytes)
+writing to: ./output1/cluster_optimize_compress_IIII_contact_5_0.250000.csv
+cluster numbers: 1
+Execution time= 0.241988: init_tm= 5.3429
+updata_insert_time  0.069875
+updata_remove_time  0.089775
+------------
+1
+contact
+./data/datasets/real/contact-primary-school.hyp
+hypergraph ready!
+contact optimize_index 1 0 2 0.2
+optimize_index(baseline+LI) 
+writing to: ./output1/cluster_optimize_index_contact_2_0.200000.csv
+cluster numbers: 1
+Execution time= 5.47829: init_tm= 0.009392
+------------
+1
+contact
+./data/datasets/real/contact-primary-school.hyp
+hypergraph ready!
+contact optimize_index 1 0 2 0.25
+optimize_index(baseline+LI) 
+writing to: ./output1/cluster_optimize_index_contact_2_0.250000.csv
+cluster numbers: 1
+Execution time= 5.53664: init_tm= 0.008615
+------------
+1
+contact
+./data/datasets/real/contact-primary-school.hyp
+hypergraph ready!
+contact optimize_index 1 0 5 0.2
+optimize_index(baseline+LI) 
+writing to: ./output1/cluster_optimize_index_contact_5_0.200000.csv
+cluster numbers: 1
+Execution time= 5.37063: init_tm= 0.004348
+------------
+1
+contact
+./data/datasets/real/contact-primary-school.hyp
+hypergraph ready!
+contact optimize_index 1 0 5 0.25
+optimize_index(baseline+LI) 
+writing to: ./output1/cluster_optimize_index_contact_5_0.250000.csv
+cluster numbers: 1
+Execution time= 5.52259: init_tm= 0.004329
+------------
+main.cpp: In function ‘int main(int, char**)’:
+main.cpp:48:18: warning: variable ‘log’ set but not used [-Wunused-but-set-variable]
+             bool log = false;
+                  ^~~
+Utility.cpp: In member function ‘void Utility::format_graph(std::__cxx11::string, std::__cxx11::string, int, bool)’:
+Utility.cpp:67:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if (es % 10 > percent) continue;
+        ~~~~~~~~^~~~~~~~~
+Utility.cpp: In member function ‘void Utility::merge(int)’:
+Utility.cpp:201:6: warning: unused variable ‘i’ [-Wunused-variable]
+  int i = 0;
+      ^
+Utility.cpp:207:6: warning: unused variable ‘x’ [-Wunused-variable]
+  int x = 0;
+      ^
+Utility.cpp:208:6: warning: unused variable ‘f’ [-Wunused-variable]
+  int f = 0;
+      ^
+HashSet.cpp: In constructor ‘HashSet::HashSet(int)’:
+HashSet.cpp:14:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (unsigned int i = 0; i < buckets_; i++) head_[i] = -1;
+                           ~~^~~~~~~~~~
+HashSet.cpp: In member function ‘int HashSet::find(int)’:
+HashSet.cpp:40:48: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (unsigned int i = head_[target_bucket]; i != -1; i = next_[i]) {
+                                              ~~^~~~~
+HashSet.cpp:41:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (val_[i] == v) return 1;
+       ~~~~~~~~^~~~
+algorithms.cpp: In function ‘bool geometricMean2(double, intIntMap&, const intintvec&, unsigned int, unsigned int, size_t, size_t)’:
+algorithms.cpp:179:18: warning: unused variable ‘count’ [-Wunused-variable]
+     unsigned int count=0;
+                  ^~~~~
+compress_index.cpp: In function ‘void compress_IIII_cluster(double, double, std::__cxx11::string, intintvec, intvec, intIntMap&, compress_index&, double, unsigned int)’:
+compress_index.cpp:439:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if(-x.count<u) break;
+            ~~~~~~~~^~
+compress_index.cpp:478:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if(-x.count<u) break;
+                ~~~~~~~~^~
+compress_index.cpp: In function ‘void compress_IIII_cluster_bianjie(double, double, std::__cxx11::string, intintvec, intvec, intIntMap&, compress_index&, double, unsigned int)’:
+compress_index.cpp:551:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if(-x.count<u) break;
+            ~~~~~~~~^~
+1
+dblp
+./data/datasets/real/DBLP.hyp
+hypergraph ready!
+dblp optimize_gs_index 1 0 5 0.5
+optimize_gs_index 
+4.4476
+compute ok!
+max_u ok!
+core-order ok!
+neicun:  7863578368(Bytes)
+writing to: ./output1/cluster_optimize_gs_index_dblp_5_0.500000.csv
+cluster numbers: 13067
+Execution time= 2.74762: init_tm= 512.232:  insert time=0
+------------
+1
+dblp
+./data/datasets/real/DBLP.hyp
+hypergraph ready!
+dblp optimize_compress_IIII 1 0 5 0.5
+optimize_compress_IIII(CI+SI+LI) 
+start!
+compute ok!
+neicun 2213402544(Bytes)
+writing to: ./output1/cluster_optimize_compress_IIII_dblp_5_0.500000.csv
+cluster numbers: 13067
+Execution time= 2.15089: init_tm= 370.169
+updata_insert_time  4.85636
+updata_remove_time  4.86752
+------------
+1
+dblp
+./data/datasets/real/DBLP.hyp
+hypergraph ready!
+dblp optimize_index 1 0 5 0.5
+optimize_index(baseline+LI) 
+writing to: ./output1/cluster_optimize_index_dblp_5_0.500000.csv
+cluster numbers: 13067
+Execution time= 514.101: init_tm= 3.618332
+------------
+run.sh: 行 32: 寻找匹配的“"”时遇到了未预期的文件结束符
+run.sh: 行 37: 语法错误: 未预期的文件结尾

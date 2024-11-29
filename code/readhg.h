@@ -10,11 +10,12 @@
 #include "hypergraph.h"
 
 std::map <std::string,std::string> dataset_to_filename = {
+            {"po" , "../datasets/po.hyp"},
             {"enron" , "../datasets/Enron.hyp"},
             {"congress" , "../datasets/congress-bills.hyp"},
             {"contact" , "../datasets/contact-primary-school.hyp"},
             {"dblp", "../datasets/DBLP.hyp"},
-            {"aminer","../datasets/aminer.hyp"},          
+            {"aminer","../datasets/aminer.hyp"},
             {"drug","../datasets/NDC-substances.hyp"},
             {"ubuntu","../datasets/threads-ask-ubuntu.hyp"},
             {"rpah","../datasets/rpa_t130000000.hyp"}

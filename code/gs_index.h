@@ -15,6 +15,7 @@
 #include <tuple>
 #include "hypergraph.h"
 #include <ctime>
+#include <climits>
 typedef  std::unordered_map<size_t, size_t> intIntMap;
 typedef  std::map<std::string, size_t> strIntMap;
 typedef  std::map<std::string, std::vector<size_t>> strvIntMap;
@@ -40,14 +41,14 @@ typedef std::tuple<size_t,size_t,size_t> inttriplet;
 typedef std::vector<inttriplet> vinttriplet;
 
 
-//for gs-index
+
 typedef std::vector<std::pair<double,size_t>> intdouprvec;
 typedef std::vector<intdouprvec> intintdouprvec;
 
 
-//for gs-index  set   自动排序 默认按第一位   保证无重复？
-typedef std::set<std::pair<double,size_t>>  douintset;      //单个core-order   单个neighbor-order
-typedef std::vector<douintset> douintsetvec;            //neighbor order     多个core-order
+
+typedef std::set<std::pair<double,size_t>>  douintset;    
+typedef std::vector<douintset> douintsetvec;        
 typedef std::pair<double,size_t> douintpair;
 
 struct core_pair
@@ -57,18 +58,16 @@ struct core_pair
     size_t eid;
 };
 
-//const size_t MAX_SIZE=12345678;
-//intintvec Cluster(MAX_SIZE,intvec{});
+
 class Gs_index{
     public:
-    Hypergraph hg;//实际上需要使用到node_index时直接(a.hg).node_index就可以  且在gs-index类里面  维护索引的时候可能有用
+    Hypergraph hg;
     std::vector<std::vector<core_pair>> core_order;
     std::vector<std::vector<core_pair>> neighbor_order;
-    //intvec Edge_Cluster;//记录每条边属于哪个cluster
-   // intintvec Cluster(MAX_SIZE,intvec{});  //纪录每个Cluster  , intintvec Cluster(size,intvec{})  ?????
+   
     size_t Cluster_num=0;
     size_t max_neighbor=0;
-    //std::vector <intvec> cluster(MAX_SIZE,intvec{});
+  
     double exec_time = 0;
     double init_time=0;
     double LI_time=0;
@@ -77,20 +76,18 @@ class Gs_index{
     size_t neicun=0;
     size_t LI_neicun=0;
     strstrMap output;
-    //std::vector< strstrMap > hnlog;
-    //strstrMap timelogs;
+
     Gs_index( Hypergraph &H);
     ~Gs_index();
   
-    void write_index(std::vector<std::vector<core_pair>> core_order);// 写入cluster_num  exectime inittime core_order neighbor_order max_neighbor等信息
+    void write_index(std::vector<std::vector<core_pair>> core_order);
     void write_others(size_t Cluster_num);
-    void writecluster(std::string folder,intintvec Cluster,double sim,unsigned int u);
+    void writecluster(std::string folder,std::vector<unsigned int> edge_to_cluster,double sim,unsigned int u);
    
 };
 
-   void gs_index_construct(std::string dataset, intintvec e_id_to_edge,intvec init_nodes, intIntMap& node_index,Gs_index& a,double sim,unsigned int u);
-   void gs_index_cluster(intintvec e_id_to_edge,Gs_index& a,double sim,unsigned int u);
-   void gs_index_insert( Gs_index &a,intvec insert_hyperedge);
-   void gs_index_remove(Gs_index &a,size_t eid);
+   void gs_index_construct(std::string dataset, intintvec& e_id_to_edge,intvec& init_nodes, intIntMap& node_index,Gs_index& a);
+   void gs_index_cluster(intintvec& e_id_to_edge,Gs_index& a,double sim,unsigned int u);
+   
    
 #endif
