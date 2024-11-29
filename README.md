@@ -60,5 +60,5 @@ Execution time= 0.00246434: init_tm= 5.01741
 ```
 
 ## remarks
-- PQuery depends on the exist lib: parlylib 
+- PQuery depends on the lib: parlylib 
 - the details for compiling and running can refer to code/run.sh
