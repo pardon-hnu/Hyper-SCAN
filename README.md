@@ -4,7 +4,7 @@ This respository is created for the paper: Efficient Structural Clustering over 
 ## datasets
 po, enron and southern-women are shared in the datasets floder.
 Entire datasets can be downloaded at https://drive.google.com/file/d/1Si69amFBcO3kpHxfp0f1M-TLYkY1aySb/view?usp=sharing. 
-MAG and its groundtruth can also be downloaded at https://drive.google.com/file/d/1Si69amFBcO3kpHxfp0f1M-TLYkY1aySb/view?usp=sharing. 
+MAG and its groundtruth can also be downloaded at https://drive.google.com/file/d/13lP2nFIiJ61ockeVv53pLAe6xuBCgzcY/view?usp=drive_link. 
 
 ## floder structure
 ```
