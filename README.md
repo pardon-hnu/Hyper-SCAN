@@ -3,7 +3,8 @@ This respository is created for the paper: Efficient Structural Clustering over 
 
 ## datasets
 po, enron and southern-women are shared in the datasets floder.
-Entire datasets can be downloaded at https://drive.google.com/file/d/1Si69amFBcO3kpHxfp0f1M-TLYkY1aySb/view?usp=sharing.
+Entire datasets can be downloaded at https://drive.google.com/file/d/1Si69amFBcO3kpHxfp0f1M-TLYkY1aySb/view?usp=sharing. 
+MAG and its groundtruth can also be downloaded at https://drive.google.com/file/d/1Si69amFBcO3kpHxfp0f1M-TLYkY1aySb/view?usp=sharing. 
 
 ## floder structure
 ```
@@ -31,7 +32,8 @@ dataset_2_filename = {
             {"aminer","aminer.hyp"},          
             {"drug","NDC-substances.hyp"},
             {"ubuntu","threads-ask-ubuntu.hyp"},
-            {"rpah","rpa_t130000000.hyp"}
+            {"rpah","rpa_t130000000.hyp"},
+            {"mag","mag10.hyp"}
         }
 ```
 
