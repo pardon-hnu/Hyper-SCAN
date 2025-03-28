@@ -1,5 +1,5 @@
 # Hyper-SCAN
-This respository is created for the paper: Efficient Structural Clustering over Hypergraphs (submitted to ICDE 2025 round 2)
+This respository is created for the paper: Efficient Structural Clustering over Hypergraphs (has been accepted by ICDE 2025)
 
 ## datasets
 po, enron and southern-women are shared in the datasets floder.
